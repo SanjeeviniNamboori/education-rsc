@@ -1,0 +1,30 @@
+/menu:
+    put:
+        tags:
+            - Menu
+        description:
+            save.
+        parameters:
+          - name:                        body
+            in:                          body
+            schema:
+                type:                    object
+                properties:
+                    data:
+                        type:            object
+                        properties:
+                            _id:
+                                type:    string
+                                example: null
+                            name:
+                                type:    string
+                                example: "AppData"
+                            link:
+                                type:    string
+                                example: "http://education/apex/appdata"
+                            icon:
+                                type:    string
+                                example: "perm_data_setting"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

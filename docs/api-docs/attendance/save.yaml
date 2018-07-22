@@ -1,0 +1,39 @@
+/attendance:
+    put:
+        tags:
+            - Attendance
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            fromTime:
+                                type: Date
+                                example: "Date.now()"
+                            toTime:
+                                type: Date
+                                example: "Date.now()"
+                            updatedBy:
+                                type: string
+                                example: "Naveen"
+                            updatedDate:
+                                type: Date
+                                example: "Date.now()"
+                            account:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: "596f5f5519d74a29406d4b7e"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

@@ -1,0 +1,23 @@
+/appdata:
+  post:
+    tags:
+      - AppData
+    description:
+      save.
+    produces:
+      - application/json
+    parameters:
+      - name: body
+        in: body
+        schema:
+          type: object
+          properties:
+              data:
+                  type: object
+                  properties:
+                      code:
+                          type: string
+                          example: "ROLE, TOPIC_TYPE, TOPIC_STATUS, LINK_TYPE, COURSE_TYPE"
+    responses:
+          200:
+              description: "status:1 is success; status: 0 is failure;"

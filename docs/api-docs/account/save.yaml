@@ -1,0 +1,51 @@
+/account:
+    put:   
+        tags:
+            - Account
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:          
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null    
+                            password:
+                                type: string
+                                example: "admin"            
+                            role:
+                                type: string
+                                example: "admin"  
+                            status:
+                                type: boolean
+                                example: true
+                            profile:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: null
+                                    name:
+                                        type: string
+                                        example: "xyz"
+                                    email:
+                                        type: string
+                                        example: "abc@gmail.com"
+                                    mobile:
+                                        type: integer
+                                        example: 123456789
+                                    city:
+                                        type: string
+                                        example: "hyd"
+                                    zipcode:
+                                        type: integer
+                                        example: 500089
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

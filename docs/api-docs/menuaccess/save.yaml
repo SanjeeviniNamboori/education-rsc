@@ -1,0 +1,35 @@
+/menuaccess:
+    put:
+        tags:
+            - MenuAccess
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            role:
+                                type: string
+                                example: "admin"
+                            status:
+                                type: boolean
+                                example: true
+                            menu:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        _id:
+                                            type: string
+                                            example: "52534dscvs435r"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

@@ -1,0 +1,30 @@
+/profilereport:
+    put:
+        tags:
+            - ProfileReport
+        description:
+            Leave.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            name:
+                                type: string
+                                example: "Account holder Name"
+                            account:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: "52534dscvs435r"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

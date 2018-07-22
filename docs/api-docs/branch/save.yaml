@@ -1,0 +1,51 @@
+/branch:
+    put:
+        tags:
+            - Branch
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            name:
+                                type: string
+                                example: "Digital Lync"
+                            loc:
+                                type: string
+                                example: "Khajaguda"
+                            address:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: null
+                                    street:
+                                        type: string
+                                        example: "NJ Street"
+                                    area:
+                                        type: string
+                                        example: "Gachibowli"
+                                    city:
+                                        type: string
+                                        example: "Hyderabad"
+                                    state:
+                                        type: string
+                                        example: "Telangana"
+                                    zipcode:
+                                        type: integer
+                                        example: 500008
+                                    country:
+                                        type: string
+                                        example: "India"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

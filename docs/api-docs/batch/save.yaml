@@ -1,0 +1,54 @@
+/batch:
+    put:
+        tags:
+            - Batch
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            name:
+                                type: string
+                                example: "DevBatch01"
+                            batchType:
+                                type: string
+                                example: "inter"
+                            fromDate:
+                                type: string
+                                example: "25/07/2017"
+                            toDate:
+                                type: string
+                                example: "29/07/2017"
+                            fromTime:
+                                type: string
+                                example: "10:00"
+                            toTime:
+                                type: string
+                                example: "12:00"
+                            course:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: "59782ee13dfb462ce0438366"
+                            branch:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: "5977228dcab9b72989d20fd4"
+                            status:
+                                type: boolean
+                                example: true
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

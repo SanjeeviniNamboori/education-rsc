@@ -1,0 +1,18 @@
+/dataload/{catagories}/{branch}: 
+  get: 
+    tags:
+      - DataLoad
+    description:
+      entity.
+    parameters: 
+      - name: catagories
+        in: path
+        required: true
+        type: string
+      - name: branch
+        in: path
+        required: true
+        type: string
+    responses:
+        200:
+            description: "status:1 is success; status: 0 is failure;"

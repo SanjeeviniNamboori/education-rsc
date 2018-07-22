@@ -1,0 +1,36 @@
+/link:
+    put:
+        tags:
+            - Link
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            topic:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: "596f5f5519d74a29406d4b7e"
+                            detail:
+                                type: string
+                                example: "Videolink for Topic"
+                            link:
+                                type: string
+                                example: "https://youtube.com"
+                            type:
+                                type: string
+                                example: "Videolink"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

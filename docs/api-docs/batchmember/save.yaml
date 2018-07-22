@@ -1,0 +1,27 @@
+/batchmember:
+    put:
+        tags:
+          - BatchMember
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            members:
+                                type: [string]
+                                example: ["597b18ee6e03d71ce606a3f8"]
+                            batch:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: "598180d3054ec616841a6a0b"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

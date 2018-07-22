@@ -1,0 +1,1 @@
+{"version":3,"file":"AppDataDAO.js","sourceRoot":"","sources":["../../server/dao/AppDataDAO.ts"],"names":[],"mappings":";;AAAA,iDAA8C;AAE9C,yDAAsD;AAEtD,gBAAyB,SAAQ,iBAAiB;IAC9C;QACI,KAAK,CAAC,iBAAO,CAAC,CAAC;IACnB,CAAC;CACJ;AAJD,gCAIC;AAED,MAAM,CAAC,IAAI,CAAC,UAAU,CAAC,CAAC"}

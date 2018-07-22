@@ -1,0 +1,1 @@
+{"version":3,"file":"QuestionDAO.js","sourceRoot":"","sources":["../../server/dao/QuestionDAO.ts"],"names":[],"mappings":";;AAAA,iDAA8C;AAE9C,2DAAsD;AAEtD,iBAA0B,SAAQ,iBAAkB;IAChD;QACI,KAAK,CAAC,mBAAQ,CAAC,CAAC;IACpB,CAAC;CACJ;AAJD,kCAIC;AAED,MAAM,CAAC,IAAI,CAAC,WAAW,CAAC,CAAC"}

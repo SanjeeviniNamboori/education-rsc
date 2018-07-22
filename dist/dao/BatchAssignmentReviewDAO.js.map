@@ -1,0 +1,1 @@
+{"version":3,"file":"BatchAssignmentReviewDAO.js","sourceRoot":"","sources":["../../server/dao/BatchAssignmentReviewDAO.ts"],"names":[],"mappings":";;AAAA,iDAA8C;AAE9C,qFAAgF;AAEhF,8BAAuC,SAAQ,iBAA+B;IAC1E;QACI,KAAK,CAAC,6CAAqB,CAAC,CAAC;IACjC,CAAC;CACJ;AAJD,4DAIC;AAED,MAAM,CAAC,IAAI,CAAC,wBAAwB,CAAC,CAAC"}
