@@ -1,0 +1,2 @@
+# education-rsc
+Typescript code
